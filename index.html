@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <h1>Div Layout Examples</h1>
+    <nav>
+      <button class="layout-btn active" data-layout="magazine">Magazine</button>
+      <button class="layout-btn" data-layout="blog">Blog</button>
+      <button class="layout-btn" data-layout="cards">Cards</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Example 1: Magazine Layout (Your original design) -->
+    <div id="magazine-layout" class="layout-container">
+      <div class="magazine-header">
+        <h2>Magazine Style Layout</h2>
+      </div>
+      <div class="magazine-content">
+        <div class="main-article">
+          <h3>Featured Story</h3>
+          <p>This demonstrates complex nesting of div elements.</p>
+        </div>
+        <div class="magazine-grid">
+          <div class="grid-item big">box1</div>
+          <div class="grid-item">box2</div>
+          <div class="grid-item">box3</div>
+          <div class="grid-item">box4</div>
+          <div class="grid-item wide">box5</div>
+        </div>
+        <div class="magazine-sidebar">
+          <div class="sidebar-item">Side 1</div>
+          <div class="sidebar-item">Side 2</div>
+          <div class="sidebar-item">Side 3</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Example 2: Blog Layout -->
+    <div id="blog-layout" class="layout-container hidden">
+      <div class="blog-header">
+        <h2>Blog Layout</h2>
+      </div>
+      <div class="blog-container">
+        <article class="blog-main">
+          <h3>Latest Post</h3>
+          <p>This shows a clean 2-column blog layout.</p>
+          <p>More content here...</p>
+        </article>
+        <aside class="blog-sidebar">
+          <div class="sidebar-section">
+            <h4>Categories</h4>
+            <ul>
+              <li>Web Design</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- Example 3: Card Layout -->
+    <div id="cards-layout" class="layout-container hidden">
+      <div class="cards-header">
+        <h2>Card Grid Layout</h2>
+      </div>
+      <div class="cards-container">
+        <div class="card">
+          <h3>Product 1</h3>
+          <p>Description</p>
+        </div>
+        <div class="card">
+          <h3>Product 2</h3>
+          <p>Description</p>
+        </div>
+        <div class="card">
+          <h3>Product 3</h3>
+          <p>Description</p>
+        </div>
+        <div class="card">
+          <h3>Product 4</h3>
+          <p>Description</p>
+        </div>
+        <div class="card">
+          <h3>Product 5</h3>
+          <p>Description</p>
+        </div>
+        <div class="card">
+          <h3>Product 6</h3>
+          <p>Description</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <p>Web Design Assignment - Div Layout Examples</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
